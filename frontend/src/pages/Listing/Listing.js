@@ -20,7 +20,7 @@ const Listing = () => {
     })
 
     React.useEffect(() => {
-        axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`).then(({data}) => {
+        axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=id`).then(({data}) => {
             setPage({
                 content: data.content,
                 last: data.last,
